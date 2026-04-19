@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Curriculum_Pamela_Tarelo</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Segoe+UI:wght@400;700&display=swap');
+        @page {
+            size: letter;
+            margin: 0;
+        }
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            color: #333;
+            font-size: 10pt;
+            line-height: 1.6;
+            background-color: #e0e0e0;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            padding: 20px;
+        }
+        .container {
+            display: block;
+            background-color: white;
+            width: 8.5in;
+            height: 11in;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            padding: 0.5in;
+            box-sizing: border-box;
+            overflow: hidden;
+        }
+        .top-section {
+            display: flex;
+            align-items: flex-start;
+            padding: 0px 0px;
+            margin-bottom: 0px;
+        }
+        .photo-container {
+            margin-right: 0px;
+            margin-bottom: 15px;
+            flex-shrink: 0;
+        }
+        .photo {
+            width: 90px;
+            height: 90px;
+            border-radius: 50%;
+            object-fit: cover;
+            /*border: 2px solid #e0e0e0;*/
+            margin-bottom: 10px;
+            margin-left: 10px;
+            margin-top: 0px;
+        }
+        .name-section {
+            flex: 1;
+            display: flex;
+            align-items: center;
+        }
+        .name-header {
+            font-size: 24pt;
+            color: #000;
+            font-weight: 700;
+            line-height: 1.1;
+            letter-spacing: -0.5px;
+            margin-left: 82px;
+            margin-top: 22.5px;
+        }
+        .content-wrapper {
+            display: flex;
+        }
+        .sidebar {
+            width: 25%;
+            padding: 0px 12px;
+            background-color: white;
+            /*border-right: 1px solid #e0e0e0;*/
+            margin-top: 0px;
+        }
+        .main {
+            width: 65%;
+            padding: 0px 15px;
+        }
+        .sidebar-section {
+            margin-bottom: 20px;
+        }
+        .sidebar-section:last-child {
+            margin-bottom: 0;
+        }
+        .sidebar-title {
+            font-size: 11pt;
+            color: #000;
+            margin-bottom: 6px;
+            font-weight: 700;
+            text-transform: capitalize;
+            padding-top: 10px;
+        }
+        .detail-item {
+            margin-bottom: 6px;
+        }
+        .detail-label {
+            display: block;
+            color: #000;
+            font-weight: 700;
+            font-size: 8.5pt;
+            margin-bottom: 1px;
+        }
+        .detail-val {
+            display: block;
+            color: #666;
+            font-size: 9pt;
+            line-height: 1.4;
+        }
+        .link-item {
+            margin-bottom: 4px;
+            color: #555;
+            font-size: 9.5pt;
+            cursor: pointer;
+        }
+        .link-item a {
+            color: #555;
+            text-decoration: none;
+        }
+        .link-item a:hover {
+            color: #0366d6;
+            text-decoration: none;
+        }
+        .skill-item {
+            margin-bottom: 5px;
+        }
+        .skill-name {
+            display: block;
+            color: #000;
+            margin-bottom: 1px;
+            font-size: 9pt;
+            font-weight: 600;
+        }
+        .dots {
+            font-size: 7pt;
+            letter-spacing: 1px;
+        }
+        .dot-filled { color: #000; }
+        .dot-empty { color: #ddd; }
+        
+        .main-section {
+            margin-bottom: 18px;
+        }
+        .main-section:first-child {
+            margin-top: 0px;
+        }
+        .main-section:last-child {
+            margin-bottom: 0;
+        }
+        .section-header {
+            font-size: 13pt;
+            color: #000;
+            margin-bottom: 8px;
+            font-weight: 700;
+            /*border-bottom: 1px solid #e0e0e0;*/
+            padding-bottom: 3px;
+        }
+        .profile-text {
+            color: #555;
+            text-align: justify;
+            font-size: 10pt;
+            line-height: 1.6;
+        }
+        .content-block {
+            margin-bottom: 14px;
+        }
+        .content-block:last-child {
+            margin-bottom: 0;
+        }
+        .block-title {
+            font-size: 10pt;
+            color: #000;
+            font-weight: 700;
+            margin-bottom: 1px;
+        }
+        .block-date {
+            font-size: 8.5pt;
+            color: #999;
+            margin-bottom: 4px;
+        }
+        .block-desc {
+            color: #555;
+            text-align: justify;
+            font-size: 9.5pt;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="top-section">
+            <div class="photo-container">
+                <img src="src/foto.jpg" alt="Foto" class="photo">
+            </div>
+            <div class="name-section">
+                <h1 class="name-header">Pamela Itzel Garcia Tarelo</h1>
+            </div>
+        </div>
+        
+        <div class="content-wrapper">
+            <div class="sidebar">
+                <div class="sidebar-section">
+                    <div class="sidebar-title">Detalles</div>
+                    <div class="detail-item">
+                        <span class="detail-label">Dirección</span>
+                        <span class="detail-val">Nuevo Casas Grandes, México</span>
+                    </div>
+                    <div class="detail-item">
+                        <span class="detail-label">Teléfono</span>
+                        <span class="detail-val">6361243810</span>
+                    </div>
+                    <div class="detail-item">
+                        <span class="detail-label">Correo electrónico</span>
+                        <span class="detail-val">pamelatarelo18@gmail.com</span>
+                    </div>
+                </div>
+
+                <div class="sidebar-section">
+                    <div class="sidebar-title">Enlaces</div>
+                    <div class="link-item"><a href="https://garciatarelo.github.io/portafolio/" target="_blank">Portafolio</a></div>
+                    <div class="link-item"><a href="https://github.com/garciatarelo" target="_blank">Github</a></div>
+                    <div class="link-item"><a href="https://www.linkedin.com/in/pamela-garcia-tarelo-232876392/" target="_blank">Linkedin</a></div>
+                </div>
+
+                <div class="sidebar-section">
+                    <div class="sidebar-title">Competencias</div>
+                    <div class="skill-item">
+                        <span class="skill-name">Laravel</span>
+                        <span class="dots"><span class="dot-filled">●●●●</span><span class="dot-empty">●</span></span>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">PHP</span>
+                        <span class="dots"><span class="dot-filled">●●●●</span><span class="dot-empty">●</span></span>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">React</span>
+                        <span class="dots"><span class="dot-filled">●●●</span><span class="dot-empty">●●</span></span>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">MySQL</span>
+                        <span class="dots"><span class="dot-filled">●●●●</span><span class="dot-empty">●</span></span>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">JavaScript</span>
+                        <span class="dots"><span class="dot-filled">●●●</span><span class="dot-empty">●●</span></span>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">Redes</span>
+                        <span class="dots"><span class="dot-filled">●●●</span><span class="dot-empty">●●</span></span>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">Soporte Técnico</span>
+                        <span class="dots"><span class="dot-filled">●●●●</span><span class="dot-empty">●</span></span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="main">
+                <div class="main-section">
+                    <div class="section-header">Perfil</div>
+                    <div class="profile-text">
+                        Profesional en formación en Ingeniería en Sistemas Computacionales, con experiencia práctica en soporte técnico, mantenimiento de equipos y conectividad de redes desde 2022. Integro estas habilidades de hardware con la creación de soluciones en desarrollo de software moderno (React, Laravel, PHP). Me considero una persona orientada a resultados, que busca aprender nuevas tecnologías y enfrentar retos reales para aportar valor tecnológico a su equipo.
+                    </div>
+                </div>
+
+                <div class="main-section">
+                    <div class="section-header">Experiencia laboral</div>
+                    
+                    <div class="content-block">
+                        <div class="block-title">Técnica en Soporte y Mantenimiento (Independiente)</div>
+                        <div class="block-date">Febrero 2022 — Presente</div>
+                        <div class="block-desc">
+                            Diagnóstico y reparación de equipos de cómputo para clientes particulares. Ejecución de mantenimiento preventivo y correctivo de hardware y software, brindando asesoría técnica personalizada.
+                        </div>
+                    </div>
+
+                    <div class="content-block">
+                        <div class="block-title">Practicante en Soporte Técnico y Redes, Compucenter</div>
+                        <div class="block-date">Febrero 2022 — Febrero 2022</div>
+                        <div class="block-desc">
+                            Mantenimiento de hardware, configuración de cableado estructurado y soporte técnico básico. Atención al cliente para la venta de componentes y accesorios tecnológicos.
+                        </div>
+                    </div>
+
+                    <div class="content-block">
+                        <div class="block-title">Atención al Cliente y Redes Sociales, Flor de Michoacán</div>
+                        <div class="block-date">Febrero 2025 — Marzo 2026</div>
+                        <div class="block-desc">
+                            Atención directa al público y gestión de caja. Administración estratégica de redes sociales y creación de contenido digital para aumentar la visibilidad del establecimiento.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="main-section">
+                    <div class="section-header">Formación</div>
+                    
+                    <div class="content-block">
+                        <div class="block-title">Instituto Tecnológico Superior de Nuevo Casas Grandes</div>
+                        <div class="block-date">Enero 2022 — Presente</div>
+                        <div class="block-desc">Ingeniería en Sistemas Computacionales (En curso).</div>
+                    </div>
+
+                    <div class="content-block">
+                        <div class="block-title">CETis No. 93</div>
+                        <div class="block-date">Febrero 2019 — Febrero 2022</div>
+                        <div class="block-desc">Técnico en Soporte y Mantenimiento de Equipo de Cómputo.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
