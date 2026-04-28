@@ -21,18 +21,19 @@
             color: #333;
             font-size: 9.25pt;
             line-height: 1.45;
-            background-color: #e0e0e0;
+            background-color: #fff;
             display: flex;
             justify-content: center;
-            align-items: flex-start;
-            padding: 4px 12px 6px 12px;
+            align-items: center;
+            min-height: 100vh;
+            padding: 0;
         }
         .container {
             display: block;
             background-color: white;
             width: 8.5in;
             height: 11in;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            box-shadow: none;
             padding: 0.22in 0.32in 0.75in 0.32in;
             box-sizing: border-box;
             overflow: hidden;
@@ -246,8 +247,9 @@
         
         @media (max-width: 768px) {
             body {
-                background-color: #f5f5f5;
+                background-color: #fff;
                 padding: 10px;
+                min-height: auto;
             }
             .container {
                 width: 100%;
