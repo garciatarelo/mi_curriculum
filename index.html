@@ -19,13 +19,13 @@
         body {
             font-family: 'Segoe UI', Arial, sans-serif;
             color: #333;
-            font-size: 10pt;
-            line-height: 1.6;
+            font-size: 9.25pt;
+            line-height: 1.45;
             background-color: #e0e0e0;
             display: flex;
             justify-content: center;
             align-items: flex-start;
-            padding: 20px;
+            padding: 4px 12px 6px 12px;
         }
         .container {
             display: block;
@@ -33,7 +33,7 @@
             width: 8.5in;
             height: 11in;
             box-shadow: 0 0 10px rgba(0,0,0,0.1);
-            padding: 0.5in;
+            padding: 0.22in 0.32in 0.75in 0.32in;
             box-sizing: border-box;
             overflow: hidden;
         }
@@ -41,21 +41,21 @@
             display: flex;
             align-items: flex-start;
             padding: 0px 0px;
-            margin-bottom: 0px;
+            margin-bottom: 25px;
         }
         .photo-container {
             margin-right: 0px;
-            margin-bottom: 15px;
+            margin-bottom: 6px;
             flex-shrink: 0;
         }
         .photo {
-            width: 90px;
-            height: 90px;
+            width: 120px;
+            height: 120px;
             border-radius: 50%;
             object-fit: cover;
             /*border: 2px solid #e0e0e0;*/
-            margin-bottom: 10px;
-            margin-left: 10px;
+            margin-bottom: 2px;
+            margin-left: 4px;
             margin-top: 0px;
         }
         .name-section {
@@ -64,41 +64,53 @@
             align-items: center;
         }
         .name-header {
-            font-size: 24pt;
+            font-size: 20pt;
             color: #000;
             font-weight: 700;
             line-height: 1.1;
             letter-spacing: -0.5px;
-            margin-left: 82px;
-            margin-top: 22.5px;
+            margin-left: 34px;
+            margin-top: 0px;
         }
         .content-wrapper {
             display: flex;
         }
         .sidebar {
-            width: 25%;
-            padding: 0px 12px;
+            width: 26%;
+            padding: 0px 8px;
             background-color: white;
             /*border-right: 1px solid #e0e0e0;*/
             margin-top: 0px;
         }
         .main {
-            width: 65%;
-            padding: 0px 15px;
+            width: 64%;
+            padding: 0px 10px;
+            margin-top: -60px;
         }
         .sidebar-section {
-            margin-bottom: 20px;
+            margin-bottom: 16px;
         }
         .sidebar-section:last-child {
             margin-bottom: 0;
         }
+        .certifications-section .content-block {
+            margin-bottom: 8px;
+        }
+        .certifications-section .block-title {
+            font-size: 8.6pt;
+            line-height: 1.25;
+        }
+        .certifications-section .block-date {
+            font-size: 8pt;
+            margin-bottom: 0;
+        }
         .sidebar-title {
-            font-size: 11pt;
+            font-size: 10pt;
             color: #000;
-            margin-bottom: 6px;
+            margin-bottom: 4px;
             font-weight: 700;
             text-transform: capitalize;
-            padding-top: 10px;
+            padding-top: 4px;
         }
         .detail-item {
             margin-bottom: 6px;
@@ -182,7 +194,7 @@
         }
         
         .main-section {
-            margin-bottom: 18px;
+            margin-bottom: 28px;
         }
         .main-section:first-child {
             margin-top: 0px;
@@ -191,7 +203,7 @@
             margin-bottom: 0;
         }
         .section-header {
-            font-size: 13pt;
+            font-size: 12pt;
             color: #000;
             margin-bottom: 8px;
             font-weight: 700;
@@ -201,31 +213,35 @@
         .profile-text {
             color: #555;
             text-align: justify;
-            font-size: 10pt;
-            line-height: 1.6;
+            font-size: 9pt;
+            line-height: 1.45;
+            margin-bottom: 8px;
         }
         .content-block {
-            margin-bottom: 14px;
+            margin-bottom: 12px;
         }
+        /* Más espacio entre apartados sólo en la columna derecha */
+        .main .main-section { margin-bottom: 30px; }
+        .main .content-block { margin-bottom: 18px; }
         .content-block:last-child {
             margin-bottom: 0;
         }
         .block-title {
-            font-size: 10pt;
+            font-size: 9.25pt;
             color: #000;
             font-weight: 700;
             margin-bottom: 1px;
         }
         .block-date {
-            font-size: 8.5pt;
+            font-size: 8pt;
             color: #999;
             margin-bottom: 4px;
         }
         .block-desc {
             color: #555;
             text-align: justify;
-            font-size: 9.5pt;
-            line-height: 1.6;
+            font-size: 9pt;
+            line-height: 1.45;
         }
         
         @media (max-width: 768px) {
@@ -298,31 +314,51 @@
                     <div class="sidebar-title">Competencias</div>
                     <div class="skill-item">
                         <span class="skill-name">Laravel</span>
-                        <span class="dots"><span class="dot-filled">●●●●</span><span class="dot-empty">●</span></span>
                     </div>
                     <div class="skill-item">
                         <span class="skill-name">PHP</span>
-                        <span class="dots"><span class="dot-filled">●●●●</span><span class="dot-empty">●</span></span>
                     </div>
                     <div class="skill-item">
                         <span class="skill-name">React</span>
-                        <span class="dots"><span class="dot-filled">●●●</span><span class="dot-empty">●●</span></span>
                     </div>
                     <div class="skill-item">
                         <span class="skill-name">MySQL</span>
-                        <span class="dots"><span class="dot-filled">●●●●</span><span class="dot-empty">●</span></span>
                     </div>
                     <div class="skill-item">
                         <span class="skill-name">JavaScript</span>
-                        <span class="dots"><span class="dot-filled">●●●</span><span class="dot-empty">●●</span></span>
                     </div>
                     <div class="skill-item">
                         <span class="skill-name">Redes</span>
-                        <span class="dots"><span class="dot-filled">●●●</span><span class="dot-empty">●●</span></span>
                     </div>
                     <div class="skill-item">
                         <span class="skill-name">Soporte Técnico</span>
-                        <span class="dots"><span class="dot-filled">●●●●</span><span class="dot-empty">●</span></span>
+                    </div>
+                </div>
+
+                <div class="sidebar-section">
+                    <div class="sidebar-title">Idiomas</div>
+                    <div class="detail-item">
+                        <span class="detail-val">Inglés - Nivel B1 (Oxford <br>
+                            Placement Test)</span>
+                    </div>
+                </div>
+                
+                <div class="sidebar-section certifications-section">
+                    <div class="sidebar-title">Certificaciones</div>
+
+                    <div class="content-block">
+                        <div class="block-title">AI Fundamentals - IBM
+                            <br>SkillsBuild <span style="font-size: 8pt; color: #999; font-weight: normal; margin-left: 6px;">2026</span></div>
+                    </div>
+
+                    <div class="content-block">
+                        <div class="block-title">CCNA: Introduction to Networks
+                            <br> - Cisco Networking Academy
+                            <span style="font-size: 8pt; color: #999; font-weight: normal; margin-left: 6px;">  <br>  2025</span></div>
+                    </div>
+
+                    <div class="content-block">
+                        <div class="block-title">Linux Unhatched - Cisco Networking Academy <span style="font-size: 8pt; color: #999; font-weight: normal; margin-left: 6px;">2025</span></div>
                     </div>
                 </div>
             </div>
@@ -331,7 +367,7 @@
                 <div class="main-section">
                     <div class="section-header">Perfil</div>
                     <div class="profile-text">
-                        Profesional en formación en Ingeniería en Sistemas Computacionales, con experiencia práctica en soporte técnico, mantenimiento de equipos y conectividad de redes desde 2022. Integro estas habilidades de hardware con la creación de soluciones en desarrollo de software moderno (React, Laravel, PHP). Me considero una persona orientada a resultados, que busca aprender nuevas tecnologías y enfrentar retos reales para aportar valor tecnológico a su equipo.
+                    Profesional en formación en Ingeniería en Sistemas Computacionales, con experiencia práctica en soporte técnico, mantenimiento de equipos y conectividad de redes. Integro estas habilidades de hardware con desarrollo de software moderno (React, Laravel, PHP) y busco seguir aportando valor tecnológico en entornos reales.
                     </div>
                 </div>
 
@@ -348,7 +384,7 @@
 
                     <div class="content-block">
                         <div class="block-title">Practicante en Soporte Técnico y Redes, Compucenter</div>
-                        <div class="block-date">Febrero 2022 — Febrero 2022</div>
+                        <div class="block-date">Febrero 2022 — Septiembre 2022</div>
                         <div class="block-desc">
                             Mantenimiento de hardware, configuración de cableado estructurado y soporte técnico básico. Atención al cliente para la venta de componentes y accesorios tecnológicos.
                         </div>
@@ -358,8 +394,22 @@
                         <div class="block-title">Atención al Cliente y Redes Sociales, Flor de Michoacán</div>
                         <div class="block-date">Febrero 2025 — Marzo 2026</div>
                         <div class="block-desc">
-                            Atención directa al público y gestión de caja. Administración estratégica de redes sociales y creación de contenido digital para aumentar la visibilidad del establecimiento.
+                            Atención al cliente y gestión estratégica de redes sociales para aumentar la visibilidad del negocio.
                         </div>
+                    </div>
+                </div>
+
+                <div class="main-section">
+                    <div class="section-header">Proyectos Destacados</div>
+
+                    <div class="content-block">
+                        <div class="block-title">CineMatch</div>
+                        <div class="block-desc">App social para cinéfilos con sistema de match, chat y reseñas de películas (React Native, JS, PHP, MySQL).</div>
+                    </div>
+
+                    <div class="content-block">
+                        <div class="block-title">Compify</div>
+                        <div class="block-desc">Plataforma para armar PCs y comparar precios de componentes entre distintas tiendas (Laravel, PHP, JS, MySQL).</div>
                     </div>
                 </div>
 
@@ -368,7 +418,7 @@
                     
                     <div class="content-block">
                         <div class="block-title">Instituto Tecnológico Superior de Nuevo Casas Grandes</div>
-                        <div class="block-date">Enero 2022 — Presente</div>
+                        <div class="block-date">Enero 2022 - Diciembre 2026 (Esperado)</div>
                         <div class="block-desc">Ingeniería en Sistemas Computacionales (En curso).</div>
                     </div>
 
@@ -378,6 +428,8 @@
                         <div class="block-desc">Técnico en Soporte y Mantenimiento de Equipo de Cómputo.</div>
                     </div>
                 </div>
+
+                
             </div>
         </div>
     </div>
