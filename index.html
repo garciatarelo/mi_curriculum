@@ -6,8 +6,8 @@
     <title>Curriculum | Pamela Tarelo</title>
     <style>
         @page {
-            size: 6.75in 11in;
-            margin: 0;
+            size: letter portrait;
+            margin: 1.5cm;
         }
         html {
             width: 100%;
@@ -91,16 +91,29 @@
         }
 
         @media print {
-            body {
+            body, html {
+                display: block !important;
                 width: 100%;
+                height: auto;
+                margin: 0;
+                padding: 0;
+                background: #fff;
             }
 
-            .container {
-                width: 100%;
-                max-width: none;
-                min-height: 11in;
-                margin: 0;
-                padding: 0.22in 0.24in 0.28in;
+            .container,
+            .contenedor-cv {
+                width: 100% !important;
+                max-width: 100% !important;
+                height: auto !important;
+                margin: 0 !important;
+                box-shadow: none !important;
+                border: none !important;
+                padding: 0 !important;
+            }
+
+            body {
+                justify-content: initial !important;
+                align-items: initial !important;
             }
         }
     </style>
