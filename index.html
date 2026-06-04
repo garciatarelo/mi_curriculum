@@ -6,8 +6,11 @@
     <title>Curriculum | Pamela Tarelo</title>
     <style>
         @page {
-            size: letter;
+            size: letter portrait;
             margin: 0;
+        }
+        html {
+            width: 100%;
         }
         * {
             margin: 0;
@@ -23,27 +26,28 @@
             padding: 0;
         }
         .container {
-            width: 8.5in;
+            width: 100%;
+            max-width: 7.25in;
             min-height: 11in;
             margin: 0 auto;
-            padding: 0.35in 0.5in 0.5in;
+            padding: 0.4in 0.35in 0.5in;
             background-color: #fff;
         }
         .resume-header {
-            margin-bottom: 14px;
+            margin-bottom: 12px;
         }
         h1 {
             font-size: 20pt;
             color: #000;
             font-weight: 700;
             line-height: 1.1;
-            margin-bottom: 8px;
+            margin-bottom: 6px;
         }
         h2 {
             font-size: 12pt;
             color: #000;
             font-weight: 700;
-            margin: 16px 0 6px;
+            margin: 14px 0 6px;
         }
         p {
             margin-bottom: 6px;
@@ -58,7 +62,7 @@
             margin-bottom: 4px;
         }
         .section {
-            margin-bottom: 10px;
+            margin-bottom: 8px;
         }
         .role-title {
             font-weight: 700;
@@ -81,7 +85,22 @@
             .container {
                 width: 100%;
                 min-height: auto;
+                max-width: none;
                 padding: 20px;
+            }
+        }
+
+        @media print {
+            body {
+                width: 100%;
+            }
+
+            .container {
+                width: 100%;
+                max-width: none;
+                min-height: 11in;
+                margin: 0;
+                padding: 0.35in 0.45in 0.45in;
             }
         }
     </style>
